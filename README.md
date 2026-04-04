@@ -4,7 +4,8 @@ A full-stack MERN application designed for tracking finances with **Role-Based A
 
 ## 🚀 Features
 
-* **Role-Based Dashboards:** * **Admin:** Full CRUD access (Create, Read, Update, Delete) for all financial records.
+* **Role-Based Dashboards:** *
+    * **Admin:** Full CRUD access (Create, Read, Update, Delete) for all financial records.
     * **Analyst:** Access to detailed tables and data filtering (Read-only).
     * **Viewer:** High-level summary charts and net balance overview.
 * **Real-time Analytics:** Visualizes spending habits using Chart.js/Recharts.
