@@ -2,9 +2,9 @@ module.exports = (req, res, next) => {
   try {
     const userHeader = req.headers.user;
 
-    // If no header → assign default role (for testing)
+    
     if (!userHeader) {
-      req.user = { role: "admin" }; // fallback
+      req.user = { role: "admin" }; 
       return next();
     }
 
