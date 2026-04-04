@@ -1,9 +1,9 @@
 const mongoose = require("mongoose");
-require('dotenv').config(); // MUST have this at the top!
+require('dotenv').config(); 
 
 const connectDB = async () => {
   try {
-    // Use the Atlas URI from .env
+
     await mongoose.connect(process.env.MONGO_URI);
     console.log("Connected to MongoDB Atlas!");
   } catch (error) {
