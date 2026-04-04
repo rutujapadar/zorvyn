@@ -1,6 +1,5 @@
 const Record = require("../models/Record");
 
-// ➕ CREATE (WITH VALIDATION)
 exports.createRecord = async (req, res) => {
   try {
     const { amount, type, category, date } = req.body;
@@ -31,7 +30,7 @@ exports.createRecord = async (req, res) => {
   }
 };
 
-// 📋 GET WITH FILTERS + VALIDATION
+
 exports.getRecords = async (req, res) => {
   try {
     const { type, category, startDate, endDate } = req.query;
@@ -68,7 +67,6 @@ exports.getRecords = async (req, res) => {
   }
 };
 
-// ✏️ UPDATE
 exports.updateRecord = async (req, res) => {
   try {
     const record = await Record.findById(req.params.id);
@@ -89,7 +87,6 @@ exports.updateRecord = async (req, res) => {
   }
 };
 
-// ❌ DELETE
 exports.deleteRecord = async (req, res) => {
   try {
     const record = await Record.findById(req.params.id);
@@ -106,7 +103,7 @@ exports.deleteRecord = async (req, res) => {
   }
 };
 
-// 📊 DASHBOARD SUMMARY
+
 exports.getSummary = async (req, res) => {
   try {
     const income = await Record.aggregate([
