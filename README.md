@@ -22,4 +22,4 @@ A full-stack MERN application designed for tracking finances with **Role-Based A
 * **State Management:** React Context API / Hooks
 
 ---
-video link:https://drive.google.com/file/d/1TGrNvLVDndoSPECVdCgoXKmKSL1j_SKS/view?usp=sharing
+video link: https://drive.google.com/file/d/1TGrNvLVDndoSPECVdCgoXKmKSL1j_SKS/view?usp=sharing
